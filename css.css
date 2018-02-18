@@ -1,0 +1,71 @@
+body{
+	background-color: grey;
+
+}
+
+li{
+list-style-type: none;
+
+}
+ul{
+margin-left: 0;
+padding-left: 0;
+
+}
+.nav li{
+width:40px;
+	height: 40px;
+
+	overflow: hidden;
+	transition: 1s;
+
+}
+.nav li:hover{
+	height: 130px;
+	width:150px;
+	}
+.nav li a:hover{
+	background-color: #00FFFF;
+}
+.nav li a{
+display:block;
+height: 30px;
+line-height: 30px;
+background-color: #00CED1;
+margin:1px;
+cursor:pointer;
+margin-left: 40px;
+
+}
+.nav li a:first-child{
+height: 40px;
+margin-left: 0;
+text-indent: 40px;
+
+}
+.nav li a:first-child::before{
+	content: '';
+	position: absolute;
+	display:block;
+width:40px;
+height: 40px;
+opacity: .4;
+
+
+}
+.main-menu a:first-child::before{
+background:url(8-direction.png) center no-repeat;
+background-size: 100% 100%;
+}
+.settings a:first-child::before{
+background:url(settings.png)center no-repeat;
+background-size: 100% 100%;
+}
+.link a:first-child::before{
+background:url(address-book.png)center no-repeat;
+background-size: 100% 100%;
+}
+.search a:first-child::before{
+background:url(help.png)center no-repeat;
+background-size: 100% 100%;
+}
